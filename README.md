@@ -1,3 +1,5 @@
-# Title
+# My portfolio, made with nuxt
 
-### This was cloned from the nuxt community express template.
+### This was made from my [vue portfolio](https://github.com/leomet07/vue-portfolio)
+
+After making a database or code change, the html must be rebuilt and redeployed to Netlify, so run `deply.bat`
