@@ -1,22 +1,58 @@
 <template>
 	<div class="container">
-		<div>
-			<h1 class="title">
-				nuxt-express
-			</h1>
-			<div>
-				{{ test[1].name }}
+		<h1>Lenny's projects</h1>
+		<div id="projects" ref="projects" :key="dir">
+			<div v-if="projects.length > 0">
+				<div v-for="project in projects" v-bind:key="project._id">
+					<ProjectDisplay
+						:description="project.description"
+						:images="project.images"
+						:reverse="get_boolean()"
+						:direction="dir"
+						:web_url="project.web_url"
+						:gh_url="project.gh_url"
+						class="project"
+					/>
+
+					<hr />
+				</div>
 			</div>
+
+			<div v-else>
+				<h3>If my projects don't load soon, reload the page.</h3>
+			</div>
+
+			<h3>Inspired by Fireship</h3>
 		</div>
 	</div>
 </template>
 
 <script>
+let bool = true;
 export default {
 	async asyncData({ $http }) {
-		const test = await $http.$get("/api/get_projects");
+		const projects = await $http.$get("/api/get_projects");
 		return {
-			test,
+			projects,
+		};
+	},
+	data: function() {
+		return {
+			dir: "row",
+			get_boolean() {
+				bool = !bool;
+				return String(bool);
+			},
+			projects: [],
+		};
+	},
+	async created() {},
+	mounted() {
+		window.onload = () => {
+			this.dir = window.innerWidth > 900 ? "row" : "column";
+		};
+		window.onresize = () => {
+			this.dir = window.innerWidth > 900 ? "row" : "column";
 		};
 	},
 };
@@ -26,32 +62,33 @@ export default {
 .container {
 	margin: 0 auto;
 	min-height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+
 	text-align: center;
 }
 
-.title {
-	font-family: "Quicksand", "Source Sans Pro", -apple-system,
-		BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-		sans-serif;
-	display: block;
-	font-weight: 300;
-	font-size: 100px;
-	color: #35495e;
-	letter-spacing: 1px;
+body {
+	color: black;
+}
+h1 {
+	text-align: center;
+}
+#projects {
+	text-align: center;
 }
 
-.subtitle {
-	font-weight: 300;
-	font-size: 42px;
-	color: #526488;
-	word-spacing: 5px;
-	padding-bottom: 15px;
+.project {
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	margin-bottom: 7%;
+	margin-top: 7%;
 }
-
-.links {
-	padding-top: 15px;
+hr {
+	width: 70%;
+}
+@media only screen and (max-width: 1200px) {
+	.project {
+		width: 90%;
+	}
 }
 </style>
