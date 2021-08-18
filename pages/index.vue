@@ -57,7 +57,7 @@ export default {
 	},
 	head() {
 		return {
-			title: "Portfolio",
+			title: "My Portfolio",
 		};
 	},
 };
