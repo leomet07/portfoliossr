@@ -12,7 +12,11 @@
   },
   "dependencies": {
     "@nuxt/http": "latest",
+    "cors": "^2.8.5",
     "express": "latest",
+    "helmet": "^4.6.0",
+    "mongoose": "^5.13.7",
+    "morgan": "^1.10.0",
     "nuxt": "latest"
   },
   "devDependencies": {

@@ -5,12 +5,7 @@
 				nuxt-express
 			</h1>
 			<div>
-				{{ test }}
-				<div class="links">
-					<nuxt-link class="link" to="/users">
-						Users List
-					</nuxt-link>
-				</div>
+				{{ test[1].name }}
 			</div>
 		</div>
 	</div>
@@ -19,7 +14,7 @@
 <script>
 export default {
 	async asyncData({ $http }) {
-		const test = await $http.$get("/api/test");
+		const test = await $http.$get("/api/get_projects");
 		return {
 			test,
 		};
