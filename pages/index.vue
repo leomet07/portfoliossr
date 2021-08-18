@@ -55,6 +55,11 @@ export default {
 			this.dir = window.innerWidth > 900 ? "row" : "column";
 		};
 	},
+	head() {
+		return {
+			title: "My portfolio",
+		};
+	},
 };
 </script>
 
