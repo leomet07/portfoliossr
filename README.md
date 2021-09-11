@@ -1,4 +1,4 @@
-# My portfolio, made with nuxt
+# My portfolio, made with nuxt and SSR.
 
 ### This was made from my [vue portfolio](https://github.com/leomet07/vue-portfolio)
 
