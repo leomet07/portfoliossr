@@ -1,5 +1,11 @@
 <template>
 	<div class="container">
+		<h1>
+			About Me
+		</h1>
+		<h3 id="aboutmetext">
+			{{ aboutme.text }}
+		</h3>
 		<h1>Lenny's projects</h1>
 		<div id="projects" ref="projects" :key="dir">
 			<div v-if="projects.length > 0">
@@ -32,8 +38,10 @@ let bool = true;
 export default {
 	async asyncData({ $http }) {
 		const projects = await $http.$get("/api/get_projects");
+		const aboutme = await $http.$get("/api/get_aboutme");
 		return {
 			projects,
+			aboutme,
 		};
 	},
 	data: function() {
@@ -76,6 +84,7 @@ body {
 }
 h1 {
 	text-align: center;
+	margin: 0;
 }
 #projects {
 	text-align: center;
@@ -88,8 +97,19 @@ h1 {
 	margin-bottom: 7%;
 	margin-top: 7%;
 }
+
+.project:nth-child(1) {
+	margin-top: 2%;
+}
+
 hr {
 	width: 70%;
+}
+
+#aboutmetext {
+	text-align: center;
+	margin-left: 0;
+	padding: 0;
 }
 @media only screen and (max-width: 1200px) {
 	.project {
