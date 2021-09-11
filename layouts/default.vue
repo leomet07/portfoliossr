@@ -7,7 +7,6 @@
 <script></script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 :root {
 	font-size: 16px;
 
@@ -16,7 +15,7 @@
 	--bg-primary: #23232e;
 	--bg-secondary: #141418;
 	--transition-speed: 600ms;
-	--main-font: "Open Sans", sans-serif;
+	--main-font: "Open Sans";
 	font-family: var(--main-font);
 }
 
