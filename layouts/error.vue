@@ -8,7 +8,7 @@
 				{{ error.message }}
 			</h2>
 			<nuxt-link v-if="error.statusCode === 404" class="button" to="/">
-				Homepage
+				Back to homepage
 			</nuxt-link>
 		</div>
 	</section>
@@ -35,22 +35,7 @@ export default {
 	text-align: center;
 }
 
-.title {
-	font-family: "Quicksand", "Source Sans Pro", -apple-system,
-		BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-		sans-serif;
-	display: block;
-	font-weight: 300;
-	font-size: 100px;
-	color: #35495e;
-	letter-spacing: 1px;
-}
-.info {
-	font-weight: 300;
-	color: #9aabb1;
-	margin: 0;
-}
 .button {
-	margin-top: 50px;
+	color: black;
 }
 </style>

@@ -7,9 +7,24 @@
 <script></script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+:root {
+	font-size: 16px;
+
+	--text-primary: #b6b6b6;
+	--text-secondary: #ececec;
+	--bg-primary: #23232e;
+	--bg-secondary: #141418;
+	--transition-speed: 600ms;
+	--main-font: "Open Sans", sans-serif;
+	font-family: var(--main-font);
+}
+
+#nav {
+	position: fixed;
+}
 #app {
-	font-family: Avenir, Helvetica, Arial, sans-serif;
+	font-family: var(--main-font);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
@@ -17,19 +32,6 @@
 
 	/* to be away from nav */
 }
-#nav {
-	position: fixed;
-}
-:root {
-	font-size: 16px;
-	font-family: "Open Sans";
-	--text-primary: #b6b6b6;
-	--text-secondary: #ececec;
-	--bg-primary: #23232e;
-	--bg-secondary: #141418;
-	--transition-speed: 600ms;
-}
-
 body {
 	color: black;
 	background-color: white;
@@ -63,6 +65,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 * {
-	font-family: "Montserrat", sans-serif;
+	font-family: var(--main-font);
+	font-weight: normal;
 }
 </style>
