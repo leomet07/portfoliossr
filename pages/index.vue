@@ -94,11 +94,7 @@ h1 {
 	margin-left: auto;
 	margin-right: auto;
 	width: 75%;
-	margin-bottom: 7%;
-	margin-top: 7%;
-}
-
-.project:nth-child(1) {
+	margin-bottom: 2%;
 	margin-top: 2%;
 }
 
