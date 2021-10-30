@@ -106,10 +106,19 @@ hr {
 	text-align: center;
 	margin-left: 0;
 	padding: 0;
+	margin: auto;
+	width: 80vw;
 }
 @media only screen and (max-width: 1200px) {
 	.project {
 		width: 90%;
+	}
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+	#aboutmetext {
+		width: 90vw;
 	}
 }
 </style>
