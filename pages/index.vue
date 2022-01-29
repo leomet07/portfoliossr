@@ -94,8 +94,8 @@ h1 {
 	margin-left: auto;
 	margin-right: auto;
 	width: 75%;
-	margin-bottom: 2%;
-	margin-top: 2%;
+	margin-bottom: 5%;
+	margin-top: 5%;
 }
 
 hr {
