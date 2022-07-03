@@ -21,7 +21,11 @@ export default {
 			{
 				hid: "description",
 				name: "description",
-				content: process.env.npm_package_description || "",
+				content: "The blog showcasing Lenny's skills and projects.",
+			},
+			{
+				"http-equiv": "Content-Type",
+				content: "text/html; charset=utf-8",
 			},
 		],
 		link: [
@@ -32,6 +36,9 @@ export default {
 					"https://fonts.googleapis.com/css2?family=Open+Sans&display=swap",
 			},
 		],
+	},
+	htmlAttrs: {
+		lang: "en",
 	},
 
 	/*

@@ -12,7 +12,7 @@
 					>
 						&lt;
 					</button>
-					<img :src="images[index]" />
+					<nuxt-img :alt="name" :src="images[index]" />
 					<button v-if="images.length > 1" id="next" @click="nextimg">
 						&gt;
 					</button>
@@ -38,6 +38,7 @@ export default {
 		"images",
 		"description",
 		"direction",
+		"name",
 	],
 	mounted() {
 		// eslint-disable-next-line no-console

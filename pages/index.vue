@@ -17,6 +17,7 @@
 						:direction="dir"
 						:web_url="project.web_url"
 						:gh_url="project.gh_url"
+						:name="project.name"
 						class="project"
 					/>
 
