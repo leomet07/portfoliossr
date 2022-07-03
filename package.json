@@ -14,10 +14,8 @@
 		"cors": "^2.8.5",
 		"express": "latest",
 		"helmet": "^4.6.0",
-		"ipx": "^0.9.9",
 		"mongoose": "^5.13.7",
 		"morgan": "^1.10.0",
-		"@nuxt/image": "^0.7.1",
 		"nuxt": "latest"
 	},
 	"devDependencies": {
@@ -26,6 +24,7 @@
 		"@nuxtjs/vercel-builder": "^0.21.3",
 		"babel-eslint": "^10.1.0",
 		"eslint": "^7.20.0",
-		"eslint-plugin-nuxt": "^2.0.0"
+		"eslint-plugin-nuxt": "^2.0.0",
+		"@nuxt/image": "^0.7.1"
 	}
 }
