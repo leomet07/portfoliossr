@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "nuxt",
-		"serve" : "nuxt",
+		"serve": "nuxt",
 		"build": "nuxt build",
 		"start": "nuxt start",
 		"generate": "nuxt generate"
@@ -14,8 +14,10 @@
 		"cors": "^2.8.5",
 		"express": "latest",
 		"helmet": "^4.6.0",
+		"ipx": "^0.9.9",
 		"mongoose": "^5.13.7",
 		"morgan": "^1.10.0",
+		"@nuxt/image": "^0.7.1",
 		"nuxt": "latest"
 	},
 	"devDependencies": {

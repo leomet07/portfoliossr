@@ -4,6 +4,7 @@ export default {
 	 ** See https://nuxtjs.org/api/configuration-target
 	 */
 	target: "static",
+	buildModules: ["@nuxt/image"], // <--- If Static is used
 
 	/*
 	 ** Headers of the page

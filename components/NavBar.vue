@@ -36,7 +36,7 @@
 					target="_blank"
 					class="nav-link"
 				>
-					<img id="twitter" src="/img/mail.png" />
+					<nuxt-img alt="Mail icon" id="mail" src="/img/mail.png" />
 					<span class="link-text">My Email</span>
 				</a>
 			</li>
@@ -60,7 +60,11 @@
 					target="_blank"
 					class="nav-link"
 				>
-					<img id="github" src="/img/GitHub_Logo_White.png" />
+					<nuxt-img
+						alt="Github logo"
+						id="github"
+						src="/img/GitHub_Logo_White.png"
+					/>
 					<span class="link-text">My Github</span>
 				</a>
 			</li>
@@ -70,7 +74,8 @@
 					target="_blank"
 					class="nav-link"
 				>
-					<img
+					<nuxt-img
+						alt="Buy me a coffee logo"
 						id="buymeacoffeelogo"
 						src="/img/buymeacoffeelogo.png"
 					/>
@@ -79,7 +84,11 @@
 			</li>
 
 			<li class="nav-item" id="themeButton">
-				<img id="long_logo" src="/img/long_logo.png" />
+				<nuxt-img
+					alt="My Name in a logo"
+					id="long_logo"
+					src="/img/long_logo.png"
+				/>
 			</li>
 		</ul>
 	</div>
