@@ -9,9 +9,7 @@ console.log("Loaded api");
 router.get("/get_projects", async (req, res) => {
 	const skip = req.body.skip || 0;
 
-	const projects = await Project.find({})
-		.skip(skip)
-		.limit(10);
+	const projects = await Project.find({}).skip(skip).limit(20);
 
 	projects.sort((a, b) => {
 		return a.index - b.index;
