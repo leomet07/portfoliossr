@@ -32,8 +32,15 @@ export default {
 			{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
 			{
 				rel: "stylesheet",
-				href:
-					"https://fonts.googleapis.com/css2?family=Open+Sans&display=swap",
+				href: "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap",
+			},
+		],
+		script: [
+			{
+				async: true,
+				defer: true,
+				"data-website-id": "c15ba873-a8c6-48a4-b775-4224d767a81d",
+				src: "https://umami-fork-alpha.vercel.app/umami.js",
 			},
 		],
 	},

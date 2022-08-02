@@ -7,6 +7,11 @@ After making a database or code change, the html must be rebuilt and redeployed 
 To build a dist/ locally, run `npm run generate`
 
 The site is live at [leomet07.vercel.app](https://leomet07.vercel.app)
+
 ## .env Specifications
 
 `DB_CONNECT={mongodb_srv_uri}`
+
+## Analytics
+
+This website uses [Umami](https://umami.is/) analytics. Why not Google Analytics? Because Google Analytics should be (and in some places are) illegal.
